@@ -170,6 +170,19 @@ export const DoctorsPage: React.FC = () => {
         </div>
       </div>
 
+      <label className="inline-flex min-h-[44px] cursor-pointer items-center gap-2 rounded-xl border border-slate-200 bg-white px-3.5 text-sm font-semibold text-slate-700">
+        <input
+          type="checkbox"
+          checked={filters.dayFilter === 'today'}
+          onChange={(event) => {
+            const dayFilter = event.currentTarget.checked ? 'today' : 'all';
+            setFilters((prev) => ({ ...prev, dayFilter }));
+          }}
+          className="size-4 accent-teal-700"
+        />
+        Jadwal Hari Ini
+      </label>
+
       {/* Specialty Segmented Controls (Interactive buttons conforming to Zero-Pill rule) */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none" role="tablist" aria-label="Filter Spesialisasi">
         <button
