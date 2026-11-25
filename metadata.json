@@ -1,0 +1,7 @@
+{
+  "name": "CareConnect",
+  "description": "Aplikasi konsultasi kesehatan & telemedis modern mobile-first untuk mencari dokter, jadwal konsultasi, dan pengingat janji temu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
